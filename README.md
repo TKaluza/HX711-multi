@@ -15,3 +15,9 @@ Connect all HX711 units to share a single clock line, and plug each data line fr
 
 # How to use
 See the examples section for usage, as well as some useful tools for evaluating your setup.
+
+# Functions
+If you have defined a scales object according to the example you have right now the following options: 
+  * scales.readRaw(results); Gives you a unchanged read out of the sensors in a long array 
+  * scales.tare(times, tolerance); Tares the system without calculation a average value, but checking if read outs are in the given tolerance field. 
+  * scales.read(results); Gives you the a readout Raw-tare value. 
